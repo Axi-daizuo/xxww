@@ -159,6 +159,22 @@
       display: block;
       margin: 5px 10px 10px;
     }
+    .header a {
+          color: #fff !important;
+        }
+
+        .jjj {
+          position: absolute;
+          margin-left: -8px;
+          left: 50%;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          font-size: 0;
+          border-width: 8px;
+          border-style: dashed dashed solid;
+          border-color: transparent transparent #fff;
+        }
   </style>
   <div class="outer-layer">
     <div class="outer-layer-content">
@@ -185,128 +201,112 @@
           height: 212px;
         }
       </style>
-      <div class="header">
-        <div class="width1180 clearfix">
-          <div class="logo"><a href="#" target="_parent" class="home"></a></div>
-          <div class="homePage-nav" style="margin-left:28px;">
-            <a href="#" class="active">首页</a>
-          </div>
-          <div id="nav-first" class="header-nav">
-            <dl id="gdjy-nav">
-              <dt>高等教育信息<span class="sanjiao"></span></dt>
-              <dd style="display: none;">
-                <ul class="sub_nav_mian" style="">
-                  <li>学籍信息</li>
-                  <li>图像校对</li>
-                  <li>学历信息</li>
-                  <li>学位信息</li>
-                  <li>考研信息</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl id="bab-nav">
-              <dt>在线验证报告<span class="sanjiao"></span></dt>
-              <dd style="display: none;">
-                <ul class="sub_nav_mian" style="">
-                  <li>首页</li>
-                  <li>高等学籍</li>
-                  <li>高等学历</li>
-                  <li>学位</li>
-                  <li>协助申请</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl id="rzbg-nav">
-              <dt>学历学位认证与成绩验证<span class="sanjiao"></span></dt>
-              <dd style="display: none;">
-                <ul class="sub_nav_mian" style="">
-                  <li>首页</li>
-                  <li>绑定报告</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl id="gjhz-nav">
-              <dt>出国报告发送<span class="sanjiao"></span></dt>
-              <dd style="display: none;">
-                <ul class="sub_nav_mian" style="">
-                  <li>首页</li>
-                  <li>传输费用</li>
-                  <li>英文翻译</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl>
-              <dt id="vote-nav">调查/投票<span class="sanjiao" style="left:46px;"></span></dt>
-              <dd style="display: none;">
-                <ul class="sub_nav_mian" style="">
-                  <li>首页</li>
-                  <li>跟踪调查</li>
-                  <li onmousedown="gaTrackerOutboundLink(this,'jygz', 'click', 'survey_jygz_menu')">就业跟踪</li>
-                  <li>专业推荐</li>
-                  <li>专业满意度</li>
-                  <li>院校满意度</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl>
-              <dt id="xz-nav"><a href="#" class="xz-link"
-                  target="_blank">职业测评</a></dt>
-              <dd style="display: none;">
-                <ul class="sub_nav_mian" style="">
-                  <li><a href="#" target="_blank">首页</a></li>
-                  <li><a href="#" target="_blank">专业洞察</a></li>
-                  <li><a href="#" target="_blank">职业测评</a></li>
-                  <li><a href="#" target="_blank">职业探索</a></li>
-                  <li><a href="#" target="_blank">职业人物</a></li>
-                  <li><a href="#" target="_blank">就业指导课</a></li>
-                </ul>
-              </dd>
-            </dl>
-            <dl>
-              <dt id="ncss-nav"><a href="#"
-                  onmousedown="gaTrackerOutboundLink(this,'ncssindex', 'click', 'frommenu')" target="_blank"
-                  class="jy-link">就业</a></dt>
-              <dd style="display: none;">
-                <ul class="sub_nav_mian" style="">
-                  <li><a href="#"
-                      onmousedown="gaTrackerOutboundLink(this,'ncssindex', 'click', 'frommenu')" target="_blank">首页</a>
-                  </li>
-                  <li><a href="#"
-                      onmousedown="gaTrackerOutboundLink(this,'ncsszw', 'click', 'frommenu')" target="_blank">职位</a>
-                  </li>
-                  <li><a href="#"
-                      onmousedown="gaTrackerOutboundLink(this,'ncssqy', 'click', 'frommenu')" target="_blank">企业</a>
-                  </li>
-                  <li><a href="#"
-                      onmousedown="gaTrackerOutboundLink(this,'ncsszph', 'click', 'frommenu')" target="_blank">招聘会</a>
-                  </li>
-                </ul>
-              </dd>
-            </dl>
-            <div class="header-nav-bg" style="display: none;">&nbsp;</div>
-          </div>
-
-          <div class="nav-userinfo">
-
-            <div class=" btn-group">
-              <div class="user dropdown-toggle" data-toggle="dropdown"><i class="iconfont" title="个人中心"></i>个人中心<span
-                  class="caret"></span>
+          <div class="header">
+            <div class="width1180 clearfix">
+              <div class="logo"><a href="#" target="_parent" class="home"></a></div>
+              <div class="homePage-nav" style="margin-left:28px;">
+                <a href="#">首页</a>
               </div>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" target="_blank"><i class="iconfont"
-                      title="账号"></i>账号</a>
-                </li>
-
-                <li><a
-                    href="#"><i
-                      class="iconfont" title="退出"></i>退出</a></li>
-              </ul>
+              <div id="nav-first" class="header-nav">
+                <dl id="gdjy-nav">
+                  <a href="index4.html">
+                    <dt>高等教育信息<span class="jjj"></span></dt>
+                  </a>
+                  <dd style="display: none;">
+                    <ul class="sub_nav_mian" style="">
+                      <li>学籍信息</li>
+                      <li>图像校对</li>
+                      <li>学历信息</li>
+                      <li>学位信息</li>
+                      <li>考研信息</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl id="bab-nav" class="active">
+                  <a href="index6.html">
+                    <dt>在线验证报告</dt>
+                  </a>
+                  <dd style="display: none;">
+                    <ul class="sub_nav_mian" style="">
+                      <li class="active">首页</li>
+                      <li>高等学籍</li>
+                      <li>高等学历</li>
+                      <li>学位</li>
+                      <li>协助申请</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl id="rzbg-nav">
+                  <a href="index7.html">
+                    <dt>学历学位认证与成绩验证<span class="sanjiao" style="display: none;"></span></dt>
+                  </a>
+                  <dd style="display: none;">
+                    <ul class="sub_nav_mian" style="">
+                      <li>首页</li>
+                      <li>绑定报告</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl id="gjhz-nav">
+                  <dt>出国报告发送<span class="sanjiao" style="display: none;"></span></dt>
+                  <dd style="display: none;">
+                    <ul class="sub_nav_mian" style="">
+                      <li>首页</li>
+                      <li>传输费用</li>
+                      <li>英文翻译</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <a href="index8.html">
+                    <dt id="vote-nav">调查/投票<span class="sanjiao" style="left: 46px; display: none;"></span></dt>
+                  </a>
+                  <dd style="display: none;">
+                    <ul class="sub_nav_mian" style="">
+                      <li>首页</li>
+                      <li>跟踪调查</li>
+                      <li onmousedown="gaTrackerOutboundLink(this,'jygz', 'click', 'survey_jygz_menu')">就业跟踪</li>
+                      <li>专业推荐</li>
+                      <li>专业满意度</li>
+                      <li>院校满意度</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt id="xz-nav"><a href="#" class="xz-link" target="_blank">就业</a></dt>
+                  <dd style="display: none;">
+                    <ul class="sub_nav_mian" style="">
+                      <li><a href="#" target="_blank">首页</a></li>
+                      <li><a href="#" target="_blank">专业洞察</a></li>
+                      <li><a href="#" target="_blank">职业测评</a></li>
+                      <li><a href="#" target="_blank">职业探索</a></li>
+                      <li><a href="#" target="_blank">职业人物</a></li>
+                      <li><a href="#" target="_blank">就业指导课</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+    
+                <div class="header-nav-bg" style="display: none;">&nbsp;</div>
+              </div>
+    
+              <div class="nav-userinfo">
+    
+                <div class=" btn-group">
+                  <div class="user dropdown-toggle" data-toggle="dropdown"><i class="iconfont" title="个人中心"></i>个人中心<span
+                      class="caret"></span>
+                  </div>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" target="_blank"><i class="iconfont" title="账号"></i>账号</a>
+                    </li>
+    
+                    <li><a href="#"><i class="iconfont" title="退出"></i>退出</a></li>
+                  </ul>
+                </div>
+    
+    
+              </div>
             </div>
-
-
           </div>
-        </div>
-      </div>
       <div class="sub_nav" style="display: none;">
         <div id="nav-second" class="width1180 clearfix">
           <ul class="sub_nav_mian" style="display:none">
