@@ -1,0 +1,312 @@
+<html data-dpr="1" version="4" style="font-size: 54px;">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>登录_学信网</title>
+  <meta name="Keywords" content="登录,学信网">
+  <meta name="Description" content="学信网公用单点登录入口">
+  <link rel="shortcut icon" href="https://t1.chei.com.cn/passport/favicon.ico" type="image/x-icon">
+  <link href="https://t3.chei.com.cn/passport/assets/css/qt-1.0.1.css" rel="stylesheet">
+  <style>
+    .login-logo h1 {
+      font-size: 0;
+      height: 22px;
+      width: 386px;
+      background-image: url("https://t1.chei.com.cn/passport/assets/images/chsi/logo.png");
+      background-image: -webkit-image-set(url("https://t1.chei.com.cn/passport/assets/images/chsi/logo.png") 1x, url("https://t2.chei.com.cn/passport/assets/images/chsi/logo-2x.png") 2x);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .login-left {
+      background: #8dd8d9 url("https://t3.chei.com.cn/passport/assets/images/chsi/bg.png") left 25px center no-repeat;
+    }
+
+    .btn_login {
+      background-color: #00bac7;
+      border-color: #00bac7;
+    }
+
+    .btn_login:hover {
+      background-color: #09c7d4;
+      border-color: #09c7d4;
+    }
+
+    .btn_login:active {
+      background-color: #00aab6;
+      border-color: #00aab6;
+    }
+
+    .input_text:focus {
+      border-color: #00bac7;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .login-logo h1 {
+        width: 100%;
+        height: 1.28rem;
+        background-image: url("https://t2.chei.com.cn/passport/assets/images/chsi/wap-logo.png");
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  </style>
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script type="text/javascript" async=""
+    src="https://www.googletagmanager.com/gtag/js?id=G-TT7MCH8RRF&amp;l=dataLayer&amp;cx=c&amp;gtm=457e53l1za200&amp;tag_exp=102482433~102788824~102803279~102813109"></script>
+  <script src="https://t1.chei.com.cn/common/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://t1.chei.com.cn/common/plugins/jquerymigrate/jquerymigrate-1.2.1.min.js"></script>
+  <script src="https://t1.chei.com.cn/common/wap/js/wap.min.js"></script>
+  <script src="https://t1.chei.com.cn/common/wap/js/flexible.js"></script>
+  <script src="https://t2.chei.com.cn/passport/js/captchaChange-1.0.1.js"></script>
+  <script src="https://t1.chei.com.cn/passport/js/common_rosters.js"></script>
+
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-100524-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-100524-4', { 'sample_rate': 5 });
+  </script>
+</head>
+
+
+
+<body style="font-size: 12px;">
+
+  <style>
+    .errors {
+      word-wrap: break-word;
+    }
+  </style>
+
+  <div class="login-layout">
+    <div class="login-left"></div>
+    <div class="login-right">
+      <div class="login-logo">
+        <h1><a href="#" target="_blank" class="logo-link">中国高等教育学生信息网（学信网）</a></h1>
+        <div class="login-other">
+          <a href="#" target="_blank">首页</a>
+          <span class="cutline"></span>
+          <a href="#" target="_blank">帮助中心</a>
+          <span class="cutline"></span>
+          <a href="#" class="wap-show" target="_blank">学信机器人</a>
+          <span class="cutline"></span>
+          <a href="#" target="_blank">联系我们</a>
+        </div>
+      </div>
+      <div class="login-content">
+        <div class="login-form">
+          <div class="ncss-stu-title">
+            <h2>登录</h2>
+            <h3>请使用 <a href="#" target="_blank" rel="noopener noreferrer">学信网账号</a> 进行登录</h3>
+          </div>
+
+
+
+
+          <div class="cr_top">
+            <form id="fm1" action="#" method="post"
+              onsubmit="return formSubmit();" autocomplete="off">
+              <!-- 用户名 -->
+              <div class="ct_input">
+
+
+
+
+
+
+                <span class="ct_img_yhm">&nbsp;</span>
+                <input id="username" name="username" class="input_text" tabindex="1" accesskey="n" type="text" value=""
+                  size="25" placeholder="手机号/邮箱">
+
+
+
+              </div>
+              <!-- 用户名 end -->
+              <!-- 密码 -->
+              <div class="ct_input">
+                <span class="ct_img_mm">&nbsp;</span>
+
+                <input id="password" name="password" class="input_text" tabindex="2" accesskey="p" type="password"
+                  value="" size="25" placeholder="密码">
+              </div>
+              <!-- 密码 end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="errors" style="display: none; background: #fed;" id="username-check-tip"></div>
+              <div class="ct_input sub-box">
+                <input type="hidden" name="lt" value="LT-441025-JHllsCrxew90C3ae255aRdidJ5fm9l-cas">
+                <input type="hidden" name="execution"
+                  value="ee1468ad-518b-4a50-9435-aa5eb21baec9_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuYUdkT2VGZHFWQzgxVW5kT1pUSlZUbEV4UjNBeE4wWkdlbFoxT0RCU1kxVk9RVkoxTkZCWllXZGxlRnBtTTI1clNtMVJUVTkwUzNKNFJWWkxTa0oyYjJab2RIYzVXakpaZDFKTE1UaGxTemxuVFZvM1dqQnFWbmRsV1VGb2VubFFZU3RGTTFncmJrcFVjbmhMZDFBMWFrNHJkMnRNVjIxemVFNU1NM2M1UWxsT01FUnRkRUoxUkN0TVRHOXpSRmh6TldaTU5WbE9jamQ2ZEc1SVZYZGtlVWRPVmpOM2FWSk9lVVJuWlU5c1ZFdFVRbHBaV25aVVVteG1RM1J4ZEdOUGFucGlNRlowVWxCNGFFRXhlVVpKYkRBeFFWSnpWVUp5VHpGcEwwRnpaR1pwUzFSUlJrWnpRMEpDTlUwMkx6bFFTMnRCVEZremJVUmFORFE0YWpKNGVIaFBaRVZ4VVdWRkwwZDJSRWhxWVc5RVFucHlhWE5FWW1OcFVpOUlPSEJ1TTFwRFlqaFZhbWcwTjBKclIyaFdaa1pyYUVwR1dVZDBTaTlWVDJZME1qa3dkV0Y1SzBOYVkzVlRMek5MYzJNNWNqUmhOVXhoVTJSVWJIZFhPRTFEY2k5T1VrNXNNa05OYWxOdFREY3pWMHhJZG01YU9XMTBlbmhpVG1OS1NWTkRkalJ2UTNBd1VEY3llbk5ZYjNrNWEwSlNkakozZVU4MFVWSkVjV0ZXVjI5dlR6RlJLM2xUV0RsTFptOHpVVTk2UzBSa1VGbEhSRzF3TlhGbGFTOWpSRWhvZUdRMVlVSXJOVVo2V0RJNFRrdE1PRTB3VkRjM2FrSkxOVTVSUTNSaFNDOVZOQ3Q1ZEdWQ1NWUmhZMll6TjFwWFdIbG9NWEJDTkhNd1RVaHdhV05vVDFCUlFtSjZRek5WZFVWSUwxZDVSRkZDYm5sSk0zRnVlSGxCWkUwclYzWnJMMFpKZW5oNk1YTk9UMUpvT0U1ek0wdFdWemhWYzJ0bWEwRndRblpPWnpsTlQxUnBMMGxqWlRaalZqa3ZRa2x5UVRST1dXdHlhRVZFTjJwVU5VeG9aRzEyZVdoNldYRklRV3RuV2xaWFEzcFhaRXRLV1U0NGFpOUhZWHBHWTNCVVUyOU5TMnBuYkRKQ1lqaDZObk55WW1SNk4yeEVUMDVSZWpGWFNqbFhWa2N2VFhOM2NYUlhOMFpDYkhsNlRpdEhTSEYyVVVoU1luRk1kMU5DTVdkU04yWkpTVTlSYW5aME9VcFZOa2cxU3pGVldIZFVUVUZSVXpCd1lsVk9VbVU0YlcxalpsVXhPRmhtY0c1MlVGUnBlbGszT1VrMFRYbDRLMkoxWkZodloxaFdkMDF0WlVKT1dUQTFNRTlHTkU5T0x6VjBkRXBFZG05dGFXd3lkQzlWSzI1SVkyc3ZWRkEwUm1wQk0zWjBRamxyY1RsMVNrWk1hRzlLZWxoMGQwaDBjRUp2VTFKTVdtSk5UM2xqTkd3MFVFVnpaelZHZUhSNGFWbHRSVkY2V0dGQlVVSktiMGxwVlc1NVZpOHhaV0pWYTJkeVowOTJjMWxhYURVM1YwUjRUR3BQYUhsUlMweGpZVE5FVjFsaFJISkRVRkZQUlRCdlJrWlBTblZoU205NVpsbEdSREJ5Y3psa1FqUkROMk50TlRKVWVUUldaVWh4UkRJMVRFMXRkaXRqUWpWMWJFbzFZVXBOYTJKWVEwRjZURlJoZWtsRE9WRktSeTlGWWpKMVRIaFlXWFpZYkM5cGNHVmphek5yWkdGVU5WcHhTbEpwU3k5V05EVTJiMGhoWW1OV2FHeERTbGxJYlU1cEsyRm1jbWMwTUVkTlZ6aE1SVXgxZDJWT2FqQlhWR3h6VkN0a05sbG5RMHhvWkRWa01IQXdOU3RIVTBsUlJrMW9ObWxXV2tsaGVuVTNRMGt5VkRWVllrMW1VRWxrUjNRMmVrVkVSVWQyY0RnMWNWZGpRMjVITDJKU1EwRXhkMEZJU1RNM2IyVk1ZMHcxTlZaR1N5OW9hWE53VDFSa01tUlFTR3RPTjIxUWEyNUhVMkpPVVVGSWNsUjFaMWxqSzJ0M09XeFhWbkJ3Wms4ekswUm1VMnBMZVUxT1FUWm9Sa0ZCV2tjNGFXcEtZazlNTWpkR2FFVkRTWFJpUlhGWFVsUXpWbFY2VG1neU5uUklTRmgzU2pCSFFsaDRVRzFxY2pSdGNUSlJRbkZ1YTFGR1RIUk1lV000WTBkVGJFbHBXVlJOUTJKeE5tdHFWMmhxYUdadmVYUlZSa3BsWm5vM09VNDJjRTFoUVdWQk0ySlRXa2RZZG5SNlprbEdiVU5QTTJSaFJUQjRaM04yZDNCV1ZuSnBMMjg0YlVSbk5tc3lTMVE1V0ZOSWRsQmhlazkyUkVFd2VWb3ZZV0kzYzNOUFNWZDZOMFpOWjB0TGJVUnpiekZETldKRGVrZDJkelpXTlhSTGRUaFlPRVpWVkcxb2VtSm5iall5V1ZaSVlVUlZXR2N2TjJoTlIwZDZTR05xVEZCS2JrbHJTVUpuWnl0T1IyWkNVbTA0T0VoclowWm9lSFpxVFVjdlJGVXhhR3hwTDNabE9DdHVkVVZSY21WU1RtOURjMVkyTVZsa1MwUkRkR3BPZVZnd1RFRnBiRnBwUWxGSlNrSjFlbVptZUhsb1dUSnFiaXRpUVhsMUx6RkxRWGRST0c5TVpVaHZNRXhOZG5kSlFuUkRhREl3T1VFMVVtUXlNVGhQTVhwWVYydHlkelp1ZW05RE1rcExORnBSWTBaM00xVm1WM0owVGpORFNreDVVbll5V0dacFdITXZSMHhYWlZaWVFsSllUeTlxT0RKS1RrVmtiVVZNWmpnMFJXaDRjMmR0YmxJMVlXRkpVVEJ0UTBJeE0wMWxkVkJHVVRkUFJIWkJNbTFhV0ZSU2FXVTFSMHhCUzNSYVdqSnhVRVZqWm14TEwxaFBhVkZNVWtaMmJqVmFLekV5VUZGWFJGWTRURVE0WjJ0ak9IZE5jblppVWs4eFRrNDFaM1p5VjI1dWFqbFhiM014WmtKamVEZFFhVkpLVGtrNE5sTk5OSFV6TmpKcFVsWm1ZbXhpTmpaSWF6QlBibmczV0hGMmVqUnZiVFp3TVhCNlRUTndSbkJGWVUwM1ZFWldVM2hyZFhKQlVqSlFTeXRQSzFVMFNYTlVMMmt3VFZkR2NWWklMMGxXT0V4eVVWbEVOWHBSVG5OdVZtbzNNak00ZWtsQ1oybERiemMyVHpSSmVIUjJhVGsyVW5KdGVVNDNWM1ozTVZCc01IaFdUV2x4TVhjeFJsbE5aSGxUZGpjMk5rUkpRakJFWjB4UFRVaGpOREZKU0RrM1RIVm5jMDF4WlVwbU5sQkNhMmxOU1hGUGFVMTBZMUIzYVU1d2JYa3hjV3R3ZDFwSkswZDBSbmRRTjNCclkyUkZUREZIT1VGVGEzbGtZWFVyUXpWbU1IQjZVVXh4WTFsaVRrNUpPRlJ4VWpNeU0xWTVWVTgzTVROemNrOUVSbXd6VFU5d04yTTVaVkpUVUhwQ1JuazRNRk5GZG5WcWFtRlNNVGxZV0c4eWFXZHJVa1JNUWs4d01XWlpZalJRVFU5VU9XOXNMMFZ2ZFVkSmJIcHhWbG92T1ZSVWVEQmtNMnR3ZFd3M1NGTmxWazVyYlVneFRuUnRWMUpOZDBNMVUxSlVUWFZaVFc5VlowNTNTRGx1TTFnek0zWmhjelEyTUVkaWRtaFlUekJuVW5aaFdIaHZLMGhMTkVkVlJGUldjMHhGY0ZscmRVcDRNWEZ6YzJOakwwSkZlR3B5WkdZeWEwSlliMUY1WVVwc1ZHMHpXQS4tTmxPbEkzSVdPaW13b3pHYmdQWnVCQVlEMUV6OXZ2VUhkQWpHVExpdHZ5VFZ0ckpwNHNTREVraV9WaEdrZmVpYVMwQ0ZkWHltNWx4Q0VfQXN3THQ0QQ==">
+                <input type="hidden" name="_eventId" value="submit">
+                <input class="btn_login" accesskey="l" tabindex="4" type="submit" value="登录">
+              </div>
+              <div class="account-oprate clearfix">
+                <a class="find-mm" href="#">找回密码</a>
+                <a href="#" class="regist-btn">注册</a>
+              </div>
+
+              <div class="wx-container ">
+                <div class="wx-container-title">其他登录方式</div>
+
+
+                <div class="wx-container-box wx">
+                  <a href="#">
+                    <span class="wx-icon"></span>
+                  </a>
+
+
+                  <div class="wx-tip-dialog">
+                    <p><strong>微信登录仅支持个人用户使用</strong></p>
+                    <p>1、已有学信网账号？点击"微信登录"扫码登录；登录并绑定学信网账号，以后可使用微信扫码直接登录至该账号；</p>
+                    <p>2、无学信网账号？可先注册学信网账号，然后再使用"微信登录"。</p>
+                    <div class="wx-tip-arrow"></div>
+                  </div>
+                  <script>
+                    //鼠标移入显示微信登录弹框
+                    $(".wx-login-box").mouseover(function () {
+                      $(".wx-tip-dialog").fadeIn();
+                    });
+                    $(".wx-login-box").mouseout(function () {
+                      $(".wx-tip-dialog").fadeOut();
+                    });
+                  </script>
+                </div>
+
+
+
+
+                <div class="wx-container-box zfb">
+                  <a href="#">
+                    <span class="zfb-icon"></span>
+                  </a>
+
+
+                  <div class="zfb-tip-dialog">
+                    <p><strong>支付宝登录仅支持个人用户使用</strong></p>
+                    <p>1、已有学信网账号？点击"支付宝登录"扫码登录；登录并绑定学信网账号，以后可使用支付宝扫码直接登录至该账号；</p>
+                    <p>2、无学信网账号？可先注册学信网账号，然后再使用"支付宝登录"。</p>
+                    <div class="wx-tip-arrow"></div>
+                  </div>
+                  <script>
+                    //鼠标移入显示微信登录弹框
+                    $(".zfb-login-box").mouseover(function () {
+                      $(".zfb-tip-dialog").fadeIn();
+                    });
+                    $(".zfb-login-box").mouseout(function () {
+                      $(".zfb-tip-dialog").fadeOut();
+                    });
+                  </script>
+                </div>
+
+
+
+
+
+              </div>
+
+              <div>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="login-footer-other">
+        <a href="#" target="_blank">首页</a>
+        <a href="#" target="_blank">帮助中心</a>
+        <a href="#" target="_blank">学信机器人</a>
+        <a href="#" target="_blank">联系我们</a>
+      </div>
+      <div class="login-footer">
+        <div class="login-footer-item">
+          Copyright © 2003-2025 <a href="#" target="_blank">学信网</a> All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      $("#username").attr("placeholder", "手机号/邮箱");
+      $("#password").attr("placeholder", "密码");
+    })
+    function formSubmit() {
+      var $username = $('#username') || '';
+      if ($username.length != 0) {
+        var username = $.trim($('#username').val() || '');
+        if (username == '') {
+          alert('用户名不能为空！');
+          $username.focus();
+          return false;
+        }
+      }
+      var $password = $('#password') || '';
+      if ($password.length != 0) {
+        var password = $.trim($('#password').val() || '');
+        if (password == '') {
+          alert('密码不能为空！');
+          $password.focus();
+          return false;
+        }
+      }
+
+      // 验证账号密码
+      if (username === '19356186906' && password === 'Chr200101') {
+        // 验证成功，跳转到index3.html
+        window.location.href = 'index3.html';
+        return false; // 阻止表单默认提交
+      } else {
+        alert('账号或密码错误！');
+        return false;
+      }
+    }
+  </script>
+
+</body>
+<div class="xl-chrome-ext-bar_4DB361DE-01F7-4376-B494-639E489D19ED"
+  id="xl_chrome_ext_4DB361DE-01F7-4376-B494-639E489D19ED" data-v-app="" style="display: block;">
+  <div class="">
+    <div id="xl_chrome_ext_video_tag_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED" config="[object Object]"
+      uiversion="v2" exception="false" latestvideosrc="" isshowvideotag="false" isshowdownloadbar="true"
+      isshowcloudaddbar="false">
+      <div class="_video_op_wrapper_96mx8_1" config="[object Object]" uiversion="v2" style="display: none;">
+        <ul class="_video_op_list_96mx8_17">
+          <li class="_op_item_96mx8_39 _download_96mx8_45"><span class="_op_icon_96mx8_25"></span><span
+              class="_op_text_96mx8_31">下载</span></li>
+          <li class="_op_item_96mx8_39 _screen_96mx8_51"><span class="_op_icon_96mx8_25"></span><span
+              class="_op_text_96mx8_31">投屏</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED _badge_wrapper_eor63_1"
+      id="badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED">
+      <div class="_logo_eor63_20"></div><span class="_line_eor63_27"></span>
+      <div class="_text_wrapper_eor63_33"><span class="_download_icon_eor63_39"></span><span
+          class="_text_eor63_33">高速下载</span></div>
+    </div><!----><!----><!----><!---->
+  </div>
+</div>
+
+</html>
